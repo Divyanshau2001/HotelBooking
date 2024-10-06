@@ -6,6 +6,7 @@ import AddHotel from "./pages/AddHotel"
 import { userAppContext } from "./contexts/AppContext"
 import MyHotels from "./pages/MyHotels"
 import EditHotel from "./pages/EditHotel"
+import Search from "./pages/Search"
 
 function App() {
   const  {isLoggedIn} = userAppContext();
@@ -21,7 +22,7 @@ function App() {
         path="/search" 
         element= {
         <Layout>
-          <p>Search Page</p>
+          <Search/ >
         </Layout>
       } />
 
